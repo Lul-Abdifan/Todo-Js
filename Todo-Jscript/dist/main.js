@@ -1,0 +1,1 @@
+(()=>{"use strict";document.body.appendChild(function(){const e=document.querySelector("h1");return e.classList.add("hello"),e}())})();
