@@ -32,8 +32,8 @@ const renderAll = () => {
    ${task.description}
    </h2>
    <div>  <div>
-  //  <i class="fas fa-trash-alt"></i></div>
-  //                           <i class="fa-solid fa-ellipsis-vertical"></i>
+   <i class="fas fa-trash-alt"></i></div>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
   </div>
    `;
 
