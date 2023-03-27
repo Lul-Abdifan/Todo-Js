@@ -37,9 +37,7 @@
 # 📖 [Todo-List] <a name="about-project"></a>
 
 
-**[Awesome Books Project](https://lul-abdifan.github.io/Awesome-Book/)**
-A tool that helps you keep track of tasks. It lets you add, remove, and delete items. By using local storage, you can access it offline.
-
+Todo-List is an online tool designed to help individuals or teams manage their tasks and projects. The website typically includes features such as creating and organizing tasks, setting deadlines and reminders, prioritizing tasks, and tracking progress. Users can also collaborate with others by sharing tasks or lists, assigning tasks to specific team members, and leaving comments or notes on specific tasks. Todo-List websites can be used for personal task management or as a project management tool for teams working on projects together. Some popular examples of Todo-List websites include Todoist, Trello, Asana, and Wunderlist.
 
 ### Tech Stack <a name="tech-stack"></a>
 
