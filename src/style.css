@@ -13,8 +13,6 @@
   align-items: flex-start;
   padding-top: 50px;
   padding-left: 25px;
-
-  /* optional: center vertically as well */
   width: 600px;
   margin: 100px auto;
   border-right: 50px solid rgba(179, 172, 172, 0.137);
@@ -24,10 +22,6 @@
   border-radius: 5px;
 }
 
-/* .far {
-  padding-top: 15px;
-  background-color: white;
-} */
 input {
   outline: none;
   border: none;
