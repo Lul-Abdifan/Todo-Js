@@ -22,4 +22,19 @@ const saveToData = (event) => {
 const clearSpace = () => {
     inputTaker.value = "";
 };
-export { saveToData};
+const deleteTask=(event) => {
+  // Check if the target of the event is a delete button
+  if (event.target.classList.contains("delete-btn")) {
+    // Get the index of the task to be deleted from the data-index attribute
+    const index = event.target.dataset.index;
+    // Remove the task from the tasks array
+    tasks.splice(index, 1);
+    // Re-render the task list
+    storeToLocal(tasks)
+    renderAll();
+
+    
+  }
+};
+
+export {deleteTask ,saveToData};
