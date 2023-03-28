@@ -63,15 +63,19 @@ form button {
   border: 1px solid white;
 }
 
-.task-list {
+.task {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 350px;
   height: 50px;
   background-color: white;
   padding-bottom: 10px;
-  padding-left: 10px;
+ 
+ width:580px;
+}
+.edit-icon {
+  margin-right: 50px;
+  margin-left:50px;
 }
 
 .fa-trash-alt {
@@ -87,7 +91,8 @@ form button {
 }
 
 .a-ellipsis-vertical {
-  position: absolute;
+  padding-left: 50px;
+  position: relative;
   transition: 1s ease;
   opacity: 1;
 }
@@ -97,5 +102,7 @@ form button {
 }
 .warning {
   margin: 0 auto;
-  color:red
+  color: red;
+  padding-bottom: 30px;
 }
+
