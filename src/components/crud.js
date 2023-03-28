@@ -29,7 +29,9 @@ const deleteTask=(event) => {
     const index = event.target.dataset.index;
     // Remove the task from the tasks array
     tasks.splice(index, 1);
-    // Re-render the task list
+    tasks.forEach((todo, index) => {
+      todo.index = index + 1;
+    });
     storeToLocal(tasks)
     renderAll();
 
