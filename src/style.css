@@ -68,6 +68,7 @@ form button {
   justify-content: space-between;
   align-items: center;
   gap: 350px;
+  height: 50px;
   background-color: white;
   padding-bottom: 10px;
   padding-left: 10px;

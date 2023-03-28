@@ -1,46 +1,47 @@
-import './style.css';
+import "./style.css";
+import { saveToData } from "./components/crud";
+import { form } from "./components/variables";
+import { lists } from "./components/variables";
 
 const tasks = [
   {
-    description: 'Coding challenges',
+    description: "Coding challenges",
     completed: false,
     index: 3,
   },
-  {
-    description: 'Movie-App',
-    completed: false,
-    index: 2,
-  },
-  {
-    description: 'Microveres Task',
-    completed: false,
-    index: 1,
-  },
+
 ];
-const lists = document.querySelector('.lists');
+
+form.addEventListener("submit", saveToData);
 
 tasks.sort((a, b) => a.index - b.index);
 
 const renderAll = () => {
-  tasks.forEach((task) => {
-    const div = document.createElement('div');
-    const hr = document.createElement('hr');
-    div.classList.add('task');
+  const div = document.createElement("div");
+  const hr = document.createElement("hr");
+  div.innerHTML = "";
+
+  tasks.forEach((task, index) => {
+   
+    div.classList.add("task");
     div.innerHTML = `
     <h2>
    <input type="checkbox"/>
    ${task.description}
    </h2>
-   <div>  <div>
+   <div> 
+    <div>
    <i class="fas fa-trash-alt"></i></div>
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
+       <i class="fa-solid fa-ellipsis-vertical"></i>
   </div>
    `;
 
-    div.classList.add('task-list');
+    div.classList.add("task-list");
     lists.append(div);
     lists.append(hr);
   });
 };
 
 renderAll();
+
+export { tasks, renderAll };
