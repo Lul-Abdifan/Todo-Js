@@ -95,3 +95,7 @@ form button {
 .a-ellipsis-vertical:hover {
   opacity: 0;
 }
+.warning {
+  margin: 0 auto;
+  color:red
+}

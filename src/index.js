@@ -2,27 +2,24 @@ import "./style.css";
 import { saveToData } from "./components/crud";
 import { form } from "./components/variables";
 import { lists } from "./components/variables";
-
-const tasks = [
-  {
-    description: "Coding challenges",
-    completed: false,
-    index: 3,
-  },
-
-];
-
+import { retrieveFromLocal } from "./components/storage";
+let tasks;
+console.log(retrieveFromLocal());
+if (retrieveFromLocal()) {
+  tasks = retrieveFromLocal();
+} else {
+  tasks = [];
+}
 form.addEventListener("submit", saveToData);
-
+window.onload = function () {
+  renderAll();
+};
 tasks.sort((a, b) => a.index - b.index);
-
 const renderAll = () => {
-  const div = document.createElement("div");
-  const hr = document.createElement("hr");
-  div.innerHTML = "";
-
+  lists.innerHTML = ``;
   tasks.forEach((task, index) => {
-   
+    const div = document.createElement("div");
+    const hr = document.createElement("hr");
     div.classList.add("task");
     div.innerHTML = `
     <h2>
@@ -41,7 +38,4 @@ const renderAll = () => {
     lists.append(hr);
   });
 };
-
-renderAll();
-
 export { tasks, renderAll };

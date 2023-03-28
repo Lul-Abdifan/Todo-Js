@@ -1,7 +1,7 @@
 import { inputTaker, lists, warning } from "./variables";
-import { tasks } from "../index";
 import { renderAll } from "../index";
-
+import { storeToLocal } from "./storage";
+import { tasks } from "../index";
 const saveToData = (event) => {
   event.preventDefault();
   const inputValue = inputTaker.value;
@@ -14,6 +14,7 @@ const saveToData = (event) => {
     tasks.push(newTask);
     renderAll();
     clearSpace();
+    storeToLocal(tasks);
   } else {
     warning.innerHTML = `<h1>Hey,It is Empty</h1>`;
   }
@@ -21,4 +22,4 @@ const saveToData = (event) => {
 const clearSpace = () => {
     inputTaker.value = "";
 };
-export { saveToData };
+export { saveToData};
