@@ -1,4 +1,4 @@
-import { inputTaker, lists,warning } from "./variables";
+import { inputTaker, lists, warning } from "./variables";
 import { tasks } from "../index";
 import { renderAll } from "../index";
 
@@ -13,9 +13,12 @@ const saveToData = (event) => {
     };
     tasks.push(newTask);
     renderAll();
+    clearSpace();
+  } else {
+    warning.innerHTML = `<h1>Hey,It is Empty</h1>`;
   }
-  else{
-    warning.innerHTML=`<h1>Hey,It is Empty</h1>`
-  }
+};
+const clearSpace = () => {
+    inputTaker.value = "";
 };
 export { saveToData };
