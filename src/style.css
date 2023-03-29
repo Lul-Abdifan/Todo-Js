@@ -27,6 +27,7 @@ input {
   border: none;
 }
 
+
 .width-10 {
   width: 98%;
   height: 1px;
@@ -71,7 +72,7 @@ form button {
   background-color: white;
   padding-bottom: 10px;
  
- width:580px;
+ width:585px;
 }
 .edit-icon {
   margin-right: 50px;
@@ -104,5 +105,18 @@ form button {
   margin: 0 auto;
   color: red;
   padding-bottom: 30px;
+}
+.save{
+  border: 3px rgb(193, 190, 235) solid;
+  border-radius: 10px;
+  padding: 5px;
+  color: rgb(124, 179, 179);
+ margin-left:200px;
+}
+.save:hover{
+  background-color: rgb(0, 255, 136);
+  border: 3px rgb(167, 162, 233) solid;
+  color:blue;
+  cursor: pointer;
 }
 
