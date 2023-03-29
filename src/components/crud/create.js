@@ -1,5 +1,10 @@
 import { tasks } from "../..";
 import { renderAll } from "../..";
+import { storeToLocal } from "../storage";
+import { inputTaker } from "../variables";
+import { clearSpace } from "./supportive";
+import { warning } from "../variables";
+
 
 export default saveToData = (event) => {
     event.preventDefault();
