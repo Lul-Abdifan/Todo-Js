@@ -27,7 +27,6 @@ input {
   border: none;
 }
 
-
 .width-10 {
   width: 98%;
   height: 1px;
@@ -71,12 +70,12 @@ form button {
   height: 50px;
   background-color: white;
   padding-bottom: 10px;
- 
- width:585px;
+  width: 585px;
 }
+
 .edit-icon {
   margin-right: 50px;
-  margin-left:50px;
+  margin-left: 50px;
 }
 
 .fa-trash-alt {
@@ -101,22 +100,24 @@ form button {
 .a-ellipsis-vertical:hover {
   opacity: 0;
 }
+
 .warning {
   margin: 0 auto;
   color: red;
   padding-bottom: 30px;
 }
-.save{
+
+.save {
   border: 3px rgb(193, 190, 235) solid;
   border-radius: 10px;
   padding: 5px;
   color: rgb(124, 179, 179);
- margin-left:200px;
-}
-.save:hover{
-  background-color: rgb(0, 255, 136);
-  border: 3px rgb(167, 162, 233) solid;
-  color:blue;
-  cursor: pointer;
+  margin-left: 200px;
 }
 
+.save:hover {
+  background-color: rgb(0, 255, 136);
+  border: 3px rgb(167, 162, 233) solid;
+  color: blue;
+  cursor: pointer;
+}

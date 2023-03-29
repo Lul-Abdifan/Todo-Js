@@ -1,9 +1,10 @@
-import { tasks } from "../..";
-import renderAll from "../render.";
-import { storeToLocal } from "../storage";
-import { inputTaker } from "../variables";
-import { clearSpace } from "./supportive";
-import { warning } from "../variables";
+/* eslint-disable import/prefer-default-export */
+
+import { tasks } from '../../index.js';
+import { renderAll } from '../render..js';
+import { storeToLocal } from '../storage.js';
+import { inputTaker, warningSpace } from '../variables.js';
+import { clearSpace } from '../supportive.js';
 
 const saveToData = (event) => {
   event.preventDefault();
@@ -19,7 +20,7 @@ const saveToData = (event) => {
     clearSpace();
     storeToLocal(tasks);
   } else {
-    warning.innerHTML = `<h1>Hey,It is Empty</h1>`;
+    warningSpace.innerHTML = '<h1>Hey,It is Empty</h1>';
   }
 };
 export { saveToData };
