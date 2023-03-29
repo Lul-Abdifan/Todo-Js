@@ -23,12 +23,10 @@ const clearSpace = () => {
     inputTaker.value = "";
 };
 const deleteTask=(event) => {
-  // Check if the target of the event is a delete button
   if (event.target.classList.contains("delete-btn")) {
-    // Get the index of the task to be deleted from the data-index attribute
     const index = event.target.dataset.index;
-    // Remove the task from the tasks array
     tasks.splice(index, 1);
+    // Re-render the task list
     tasks.forEach((todo, index) => {
       todo.index = index + 1;
     });
