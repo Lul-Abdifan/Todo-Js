@@ -1,6 +1,6 @@
-import EditTask from './crud/update.js';
+import { EditTask } from './crud/update.js';
 import { lists } from './variables.js';
-import tasks from '../index.js';
+import { tasks } from '../index.js';
 
 const handleEdit = (index) => {
   EditTask(index);
@@ -30,4 +30,4 @@ const renderAll = () => {
   });
 };
 
-export default renderAll;
+export { renderAll };

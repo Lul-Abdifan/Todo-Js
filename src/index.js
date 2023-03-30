@@ -1,9 +1,9 @@
-import './style.css';
-import deleteTask from './components/crud/delete.js';
-import saveToData from './components/crud/create.js';
+import './styles/main.scss';
+import { deleteTask } from './components/crud/delete.js';
+import { saveToData } from './components/crud/create.js';
 import { form, lists } from './components/variables.js';
 import { retrieveFromLocal } from './components/storage.js';
-import renderAll from './components/render.';
+import { renderAll } from './components/render.js';
 
 const tasks = retrieveFromLocal() || [];
 
@@ -14,4 +14,4 @@ lists.addEventListener('click', (event) => {
 });
 tasks.sort((a, b) => a.index - b.index);
 
-export default tasks;
+export { tasks };

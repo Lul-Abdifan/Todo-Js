@@ -1,5 +1,5 @@
-import tasks from '../../index.js';
-import renderAll from '../render..js';
+import { tasks } from '../../index.js';
+import { renderAll } from '../render.js';
 import { storeToLocal } from '../storage.js';
 import { inputTaker, warningSpace } from '../variables.js';
 import { clearSpace } from '../supportive.js';
@@ -21,4 +21,4 @@ const saveToData = (event) => {
     warningSpace.innerHTML = '<h1>Hey,It is Empty</h1>';
   }
 };
-export default saveToData;
+export { saveToData };

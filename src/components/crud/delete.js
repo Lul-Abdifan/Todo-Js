@@ -1,5 +1,5 @@
-import tasks from '../../index.js';
-import renderAll from '../render..js';
+import { tasks } from '../../index.js';
+import { renderAll } from '../render.js';
 import { storeToLocal } from '../storage.js';
 import { updateIndex } from '../supportive.js';
 
@@ -13,4 +13,4 @@ const deleteTask = (event) => {
     renderAll();
   }
 };
-export default deleteTask;
+export { deleteTask };

@@ -1,5 +1,5 @@
-import tasks from '../../index.js';
-import renderAll from '../render..js';
+import { tasks } from '../../index.js';
+import { renderAll } from '../render.js';
 import { storeToLocal } from '../storage.js';
 
 const EditTask = (index) => {
@@ -25,4 +25,4 @@ const EditTask = (index) => {
   divElem.append(inputElem, saveBtn);
   descriptionElem.replaceWith(divElem);
 };
-export default EditTask;
+export { EditTask };
