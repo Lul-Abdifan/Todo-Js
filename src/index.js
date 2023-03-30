@@ -1,11 +1,9 @@
-/* eslint-disable import/prefer-default-export */
-
 import './style.css';
-import { deleteTask } from './components/crud/delete.js';
-import { saveToData } from './components/crud/create.js';
+import deleteTask from './components/crud/delete.js';
+import saveToData from './components/crud/create.js';
 import { form, lists } from './components/variables.js';
 import { retrieveFromLocal } from './components/storage.js';
-import { renderAll } from './components/render.';
+import renderAll from './components/render.';
 
 const tasks = retrieveFromLocal() || [];
 
@@ -16,4 +14,4 @@ lists.addEventListener('click', (event) => {
 });
 tasks.sort((a, b) => a.index - b.index);
 
-export { tasks };
+export default tasks;

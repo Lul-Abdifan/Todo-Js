@@ -1,4 +1,4 @@
-import { tasks } from '../index.js';
+import tasks from '../index.js';
 import { inputTaker } from './variables.js';
 
 const clearSpace = () => {
