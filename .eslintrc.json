@@ -1,4 +1,4 @@
-{
+  {
   "env": {
     "browser": true,
     "es6": true,
@@ -13,10 +13,8 @@
   "rules": {
     "no-shadow": "off",
     "no-param-reassign": "off",
-    "import/prefer-default-export": "off",
     "eol-last": "off",
     "import/no-extraneous-dependencies": "off",
-    "import/no-cycle": "off",
     "import/extensions": [ 1, {
       "js": "always", "json": "always"
     }]
@@ -26,4 +24,3 @@
     "build/"
   ]
 }
-  
