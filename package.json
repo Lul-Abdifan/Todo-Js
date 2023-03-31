@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Htetaungkyaw71/webpack-setup.git"
+    "url": "git+https://github.com/Lul-Abdifan/webpack-setup.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Htetaungkyaw71/webpack-setup/issues"
+    "url": "https://github.com/Lul-Abdifan/webpack-setup/issues"
   },
-  "homepage": "https://github.com/Htetaungkyaw71/webpack-setup#readme",
+  "homepage": "https://github.com/Lul-Abdifan/webpack-setup#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.1",

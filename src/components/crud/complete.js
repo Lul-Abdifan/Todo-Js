@@ -1,10 +1,10 @@
-import { tasks } from "../..";
-import { storeToLocal } from "../storage";
-import { renderAll } from "../render";
-import { clearAll } from "../variables";
+import { tasks } from '../..';
+import { storeToLocal } from '../storage';
+import { renderAll } from '../render';
+import { clearAll } from '../variables';
 
 const complete = () => {
-  clearAll.addEventListener("click", () => {
+  clearAll.addEventListener('click', () => {
     const unCompletedTasks = tasks.filter((task) => task.completed === false);
     unCompletedTasks.forEach((task, index) => {
       task.index = index + 1;

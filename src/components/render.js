@@ -1,7 +1,7 @@
-import { EditTask } from "./crud/update.js";
-import { lists } from "./variables.js";
-import { tasks } from "../index.js";
-import { storeToLocal } from "./storage.js";
+import { EditTask } from './crud/update.js';
+import { lists } from './variables.js';
+import { tasks } from '../index.js';
+import { storeToLocal } from './storage.js';
 
 const handleEdit = (index) => {
   EditTask(index);
@@ -12,20 +12,18 @@ const handleCheckbox = (event) => {
   const task = tasks[taskIndex];
   task.completed = checkbox.checked;
   storeToLocal(tasks);
-  renderAll();
 };
-
 const renderAll = () => {
-  lists.innerHTML = "";
+  lists.innerHTML = '';
   tasks.forEach((task, index) => {
-    const div = document.createElement("div");
-    const hr = document.createElement("hr");
-    div.classList.add("task");
+    const div = document.createElement('div');
+    const hr = document.createElement('hr');
+    div.classList.add('task');
     div.innerHTML = `
       <h2>
         <input type="checkbox" class="completed" data-index="${index}" ${
-      task.completed ? "checked" : ""
-    }>
+  task.completed ? 'checked' : ''
+}>
         <h2 class="input-board">${task.description}</h2>
       </h2>
       <div>
@@ -34,15 +32,14 @@ const renderAll = () => {
         <i class="fa-solid fa-ellipsis-vertical"></i>
       </div>
     `;
-    const checkbox = div.querySelector(".completed");
-    checkbox.addEventListener("change", handleCheckbox);
+    const checkbox = div.querySelector('.completed');
+    checkbox.addEventListener('change', handleCheckbox);
     div
-      .querySelector(".edit-icon")
-      .addEventListener("click", () => handleEdit(index));
+      .querySelector('.edit-icon')
+      .addEventListener('click', () => handleEdit(index));
     lists.append(div);
     lists.append(hr);
   });
 };
-
 
 export { renderAll };
