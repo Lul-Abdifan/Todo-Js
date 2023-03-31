@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/LATEST-VERSION">
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Todo-js</title>
+<script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
+
+<body>
+  <div class="container">
+    <div class="warning"></div>
+    <header>
+      <h1 class="heading">Today's To Do</h1>
+      <i class="fa-solid fa-rotate">
+      </i>
+    </header>
+    <hr class="width-10">
+
+    <form class="addItem" id="form">
+      <input type="text" placeholder="Add to your list..." class="input-taker" required />
+      <button type="submit">
+        <i class="fa-solid fa-arrow-turn-down"></i>
+      </button>
+    </form>
+    <hr class="width-10">
+    <div class="lists"></div>
+    <button type="submit" class="clearAllTask">Clear all completed</button>
+  </div>
+
+</body>
+
+</html>
