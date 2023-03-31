@@ -1,3 +1,4 @@
+/* eslint-disable  import/no-cycle, import/no-mutable-exports, import/prefer-default-export */
 import { tasks } from '../index.js';
 import { inputTaker } from './variables.js';
 

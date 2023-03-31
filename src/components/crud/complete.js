@@ -1,3 +1,4 @@
+/* eslint-disable  import/no-cycle, import/no-mutable-exports, import/prefer-default-export */
 import { tasks } from '../..';
 import { storeToLocal } from '../storage';
 import { renderAll } from '../render';

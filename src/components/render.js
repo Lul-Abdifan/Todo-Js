@@ -1,7 +1,8 @@
+/* eslint-disable  import/no-cycle, import/no-mutable-exports, import/prefer-default-export */
 import { EditTask } from './crud/update.js';
 import { lists } from './variables.js';
-import { tasks } from '../index.js';
 import { storeToLocal } from './storage.js';
+import { tasks } from '../index.js';
 
 const handleEdit = (index) => {
   EditTask(index);
