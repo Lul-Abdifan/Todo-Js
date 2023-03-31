@@ -5,7 +5,7 @@
   
   <br/>
 
-  <h3><b>Awesome Books Project</b></h3>
+  <h3><b>Todo Lists Project</b></h3>
 
 </div>
 
