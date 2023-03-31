@@ -5,12 +5,12 @@ import { clearAll } from "../variables";
 
 const complete = () => {
   clearAll.addEventListener("click", () => {
-    const filteredTasks = tasks.filter((task) => task.completed === false);
-    filteredTasks.forEach((task, index) => {
+    const unCompletedTasks = tasks.filter((task) => task.completed === false);
+    unCompletedTasks.forEach((task, index) => {
       task.index = index + 1;
     });
 
-    storeToLocal(filteredTasks);
+    storeToLocal(unCompletedTasks);
     renderAll();
     window.location.reload();
   });
